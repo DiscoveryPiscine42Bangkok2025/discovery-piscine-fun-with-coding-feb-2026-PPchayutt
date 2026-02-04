@@ -1,1 +1,2 @@
-find . | wc -l | tr -d ' '
+#!/bin/bash
+ls -A1 | wc -l
