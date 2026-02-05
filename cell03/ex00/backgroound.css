@@ -1,0 +1,21 @@
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    transition: background-color 0.5s;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+button:active {
+    transform: translateY(3px);
+}

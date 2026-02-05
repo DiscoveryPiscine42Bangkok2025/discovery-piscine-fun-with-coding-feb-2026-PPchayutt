@@ -1,0 +1,102 @@
+body {
+    background-color: whitesmoke;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.main-title {
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.card-container {
+    width: 300px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.profile-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+    text-align: center;
+}
+
+.no-padding {
+    padding: 0;
+    border: none;
+}
+
+.content-cell {
+    padding: 5px 10px;
+    border: none;
+}
+
+.profile-pic {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.login-name {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 15px 0 5px 0;
+    color: black;
+}
+
+.description {
+    font-size: 16px;
+    color: #888;
+    margin: 5px 0;
+}
+
+.location {
+    font-size: 16px;
+    color: black;
+    margin: 5px 0 15px 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.social-icons img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+.contact-btn {
+    display: block;
+    background-color: black;
+    color: white;
+    padding: 15px 0;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: #333;
+}

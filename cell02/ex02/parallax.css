@@ -1,0 +1,48 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.parallax-img1,
+.parallax-img2 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+}
+
+.parallax-img1 {
+    background-image: url('https://eu-central-1.graphassets.com/AnwjgMYRvQfWK3bRPjoq3z/resize=height:360,width:500/output=format:webp/9JrMeDVZTbO7AKMsI5NL');
+}
+
+.parallax-img2 {
+    background-image: url('https://external-preview.redd.it/FOTCl5g8kCW3ZD2gXefqiPEyvf_mP_nx8znjqLj_2Pw.png?width=1080&crop=smart&auto=webp&s=4055a7c6fb3bdc1c3b2a60c3850a12a56c366c64');
+}
+
+.black-block {
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 50px 80px;
+    text-align: justify;
+}
+
+.caption {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+.text-box {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 5px;
+    border-radius: 10px;
+}

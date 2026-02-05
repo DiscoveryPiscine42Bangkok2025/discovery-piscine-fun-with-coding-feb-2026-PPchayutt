@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cell03-ex02</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: whitesmoke;
+            font-family: sans-serif;
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        input,
+        select {
+            padding: 10px;
+            font-size: 16px;
+            margin: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <input type="text" id="leftOp" placeholder="Num 1">
+        <select id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+        </select>
+        <input type="text" id="rightOp" placeholder="Num 2">
+        <input type="submit" value="Try me!" id="btn">
+    </div>
+
+    <script>
+        setInterval(function () {
+            alert("Please, use me...");
+        }, 30000);
+        document.getElementById('btn').addEventListener('click', function () {
+            var leftStr = document.getElementById('leftOp').value;
+            var rightStr = document.getElementById('rightOp').value;
+            var op = document.getElementById('operator').value;
+            var left = parseInt(leftStr);
+            var right = parseInt(rightStr);
+            if (isNaN(left) || isNaN(right) || left < 0 || right < 0) {
+                alert("Error :(");
+                console.log("Error :(");
+                return;
+            }
+            if ((op === '/' || op === '%') && right === 0) {
+                alert("It's over 9000!");
+                console.log("It's over 9000!");
+                return;
+            }
+            var result;
+            if (op === '+') result = left + right;
+            else if (op === '-') result = left - right;
+            else if (op === '*') result = left * right;
+            else if (op === '/') result = left / right;
+            else if (op === '%') result = left % right;
+            alert(result);
+            console.log(result);
+        });
+    </script>
+</body>
+
+</html>
